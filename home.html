@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{%block title%}Home - BlogName{%endblock%} 
+ 
+{%block content%}
+<div class="container">
+  <div class="row">
+{% for post in posts %}
+<div class="col-sm">
+<div class="card" style="width: 18rem;">
+    <img src={{post.postImage}} class="card-img-top" alt={{post.postTitle}}>
+    <div class="card-body">
+      <h5 class="card-title">{{post.postTitle}}</h5>
+      <p class="card-text">{{post.postContent}}</p>
+      </div>
+    </div>
+  </div>
+{%endfor%}
+</div>
+</div>
+
+{%endblock%}

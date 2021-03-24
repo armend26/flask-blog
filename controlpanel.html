@@ -1,0 +1,18 @@
+{%extends 'basecontrolpanel.html'%}
+
+{%block title%}Control Panel{%endblock%}
+
+{%block content%}
+<h2>Create your post !</h2>
+<br>
+<br>
+<form action="#" method="POST">
+   <input type="text" name="post-title" placeholder="Post title" required/> 
+   <br>
+   <textarea name="post-content" required placeholder="Enter post content"></textarea>    
+   <br>
+   <input type="text" name="post-url" placeholder="Image url" required/>
+   <br>
+   <input type="submit" value="Post"/> 
+</form>
+{%endblock%}

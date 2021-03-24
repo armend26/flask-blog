@@ -1,0 +1,15 @@
+{%extends 'basecontrolpanel.html'%}
+
+{%block title%}Delete Post{%endblock%}
+{%block content%}
+<form method="POST"> 
+    <h2>Delete post</h2>
+    <h2>Select Post Id</h2>
+    <select name="value">
+        {%for post in posts%}
+        <option>{{post.id}}</option>
+        {%endfor%}
+    </select>
+    <input type="submit" value="Delete"/>
+</form>
+{%endblock%}
